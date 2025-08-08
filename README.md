@@ -55,14 +55,14 @@ These layers allow flexible adaptation to various domains (e.g. intimate relatio
 ---
 
 ## 🚧 Current Status
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16777968.svg)](https://doi.org/10.5281/zenodo.16777968)
 - ✅ Visual structure map (v1.0) complete
 - ✅ Layered architecture drafted
 - 🔄 Extended layers under construction
 - 🔄 API schema and demo outputs in development
 - 🔜 Trust & Citation Gateway page (external README)
 - 🔜 Collaborator Filter + Application Interface
-- 🔜 Zenodo/OSF documentation for extended release
+- 🔜 OSF documentation for extended release：
 
 ---
 
