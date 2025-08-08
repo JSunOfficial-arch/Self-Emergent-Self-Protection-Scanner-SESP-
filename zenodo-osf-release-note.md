@@ -15,7 +15,7 @@ This release is authored and maintained by J. Sun, and all structural logic, dia
 
 This release can be referenced on:
 - **GitHub** (project repository, version-controlled)
-- **Zenodo** (for DOI assignment and academic citation)
+- **Zenodo** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16777968.svg)](https://doi.org/10.5281/zenodo.16777968)
 - **OSF** (for collaboration, long-form archival, and file integrity)
 - Optional future integration with: Hugging Face / ArXiv
 
