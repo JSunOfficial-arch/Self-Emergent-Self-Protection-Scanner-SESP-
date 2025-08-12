@@ -1,0 +1,41 @@
+name: Example CI (pipeline-dev)
+
+on:
+  push:
+    branches: ["pipeline-dev"]
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo step 1
+        run: echo "REACHED STEP 1"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: echo step 2
+        run: echo "REACHED STEP 2"
+
+      # 读 examples 的 JSON（没有也不会失败）
+      - name: Read examples JSON
+        shell: bash
+        run: |
+          set -e
+          FILE="examples/examples.json"
+          if [[ -f "$FILE" ]]; then
+            echo "Found $FILE"
+            cat "$FILE"
+            if command -v jq >/dev/null 2>&1; then
+              echo "---- compact ----"
+              jq -r '.[] | @json' "$FILE"
+            else
+              echo "jq not present; skip parse"
+            fi
+          else
+            echo "::warning file=$FILE::examples JSON not found; skipping"
+          fi
+
+      - name: echo step 3
+        run: echo "REACHED STEP 3 ✅"
