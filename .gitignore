@@ -213,3 +213,7 @@ README.md.save
 .DS_Store
 __pycache__/
 *.pyc
+README.md.save
+.DS_Store
+__pycache__/
+*.pyc
