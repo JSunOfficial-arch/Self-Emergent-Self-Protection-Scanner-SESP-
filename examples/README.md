@@ -13,7 +13,7 @@
 python3 run_scan.py --input examples/01_self_scan.json
 python3 run_pair_scan.py --input examples/02_pair_scan.json
 
-# Contributing to SESP
+参与贡献请参考 [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 感谢你的关注！当前我们欢迎以下贡献方式：
 
