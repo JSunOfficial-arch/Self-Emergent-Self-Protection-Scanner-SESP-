@@ -1,0 +1,26 @@
+name: Example CI
+
+on:
+  push:
+    branches: [ "action-test" ]
+  workflow_dispatch:
+
+jobs:
+  run-examples:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run single scan
+        run: |
+          python3 run_scan.py --input examples/01_self_scan.json
+
+      - name: Run pair scan
+        run: |
+          python3 run_pair_scan.py --input examples/02_pair_scan.json
