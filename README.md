@@ -97,7 +97,6 @@ Let the scanner scan—but let us choose how we respond.
 
 *Document version: `README v3`*
 
-
 ---
 
 ## Usage
