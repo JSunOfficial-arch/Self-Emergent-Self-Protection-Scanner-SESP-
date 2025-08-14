@@ -1,0 +1,20 @@
+name: README Auto Sync
+
+on:
+  push:
+    branches: ["pipeline-dev"]
+    paths:
+      - links.json
+      - README.tpl.md
+      - CONTENT.md
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    uses: JSunOfficial-arch/.github/.github/workflows/readme-sync.yml@main
+    with:
+      concept_doi: ""   # 没有概念 DOI 就留空
+    secrets: inherit

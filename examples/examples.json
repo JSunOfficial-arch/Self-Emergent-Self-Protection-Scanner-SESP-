@@ -1,7 +1,16 @@
-{
-  "title": "SESP — Self‑Emergent Self‑Protection Scanner",
-  "subtitle": "Structural framework for scanning, mapping, and collaborating on self‑protection tendencies",
-  "repo_url": "https://github.com/JSunOfficial-arch/Self-Emergent-Self-Protection-Scanner-SESP-",
-  "osf_url": "",
-  "zenodo_concept_doi": "10.5281/zenodo.16777968"
-}
+
+[
+  {
+    "id": 1,
+    "name": "Sample Example",
+    "description": "This is a test example for CI pipeline."
+  },
+  {
+    "title": "SESP — Self-Emergent Self-Protection Scanner",
+    "subtitle": "Structural framework for scanning, mapping, and collaborating on self-protection tendencies",
+    "repo_url": "https://github.com/JSunOfficial-arch/Self-Emergent-Self-Protection-Scanner-SESP-",
+    "osf_url": "",
+    "zenodo_concept_doi": "10.5281/zenodo.16777968"
+  }
+]
+
